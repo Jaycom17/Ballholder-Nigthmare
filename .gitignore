@@ -1,0 +1,8 @@
+.import/
+.export/
+.export_templates/
+godot.editor_settings-*.json
+*.translation
+*.tmp
+*.import
+*.godot
