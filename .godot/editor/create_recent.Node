@@ -1,4 +1,6 @@
+Camera3D
 CollisionShape3D
 MeshInstance3D
+CharacterBody3D
 CollisionPolygon3D
 StaticBody3D

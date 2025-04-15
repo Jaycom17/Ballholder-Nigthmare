@@ -7,6 +7,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_n06xs"]
 
 [node name="test_cube" type="MeshInstance3D"]
+transform = Transform3D(10, 0, 0, 0, 0.5, 0, 0, 0, 10, 0, 0, 0)
 mesh = SubResource("BoxMesh_pvttt")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
