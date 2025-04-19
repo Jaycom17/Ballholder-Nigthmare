@@ -1,3 +1,14 @@
-res://test_cube.tscn
 res://player.tscn
 res://mundo.tscn
+res://world/mundo.tscn
+res://world/camera_3d.gd
+res://player/player.tscn
+res://platforms/static_platform.tscn
+res://platforms/mobile_platform.tscn
+res://platforms/mobile_platform.gd
+res://player/player.gd
+res://objects/stalactite.tscn
+res://collectibles/coffee.tscn
+res://chuncks/chunck_loader.tscn
+res://chuncks/chunck_loader.gd
+res://chuncks/chuncks.json

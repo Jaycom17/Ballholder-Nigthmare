@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://dke1abnirjaxt"]
+
+[ext_resource type="PackedScene" uid="uid://dp7dvgtaxcqrw" path="res://player/player.tscn" id="1_ph1s7"]
+[ext_resource type="PackedScene" uid="uid://tlt3neh5udgb" path="res://platforms/static_platform.tscn" id="3_ltsvv"]
+[ext_resource type="PackedScene" uid="uid://b5vssjxyutbv6" path="res://chuncks/chunck_loader.tscn" id="4_re12h"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lgngo"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_fw4w5"]
+sky_material = SubResource("ProceduralSkyMaterial_lgngo")
+
+[sub_resource type="Environment" id="Environment_otwa2"]
+background_mode = 2
+sky = SubResource("Sky_fw4w5")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866024, -0.433016, 0.250001, 0, 0.499998, 0.866026, -0.500003, 0.749999, -0.43301, -0.000823975, 4.86967, -0.0101471)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_otwa2")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_ph1s7")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, -1.05875, 2.08916, 0.00489092)
+
+[node name="Node3D" parent="." instance=ExtResource("3_ltsvv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.11766, 1.34511, -0.377905)
+
+[node name="chunck_loader" parent="." instance=ExtResource("4_re12h")]

@@ -1,6 +1,8 @@
 Camera3D
 CollisionShape3D
+Area3D
+StaticBody3D
+Timer
 MeshInstance3D
 CharacterBody3D
 CollisionPolygon3D
-StaticBody3D
